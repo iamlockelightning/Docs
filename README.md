@@ -3,7 +3,7 @@
 
 # 多人协作云脑图
 
-![Logo.png](.\res\Logo.png)
+![logo](res/Logo.png)
 
 [代码仓库](http://git.code.oa.com/v_jxinma/MindMap.git)
 
