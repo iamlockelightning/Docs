@@ -1,4 +1,4 @@
-# BDKB
+# BDKG
 
 # C - concepts(classes/types)category
 > tags
