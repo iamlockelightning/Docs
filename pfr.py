@@ -20,6 +20,8 @@ def problem_1(data_path):
 	sorted_pairs = sorted(word_freq_dict.items(), lambda x, y: cmp(x[1], y[1]), reverse=True) 
 	with open(data_path+"../1.txt", 'w') as fw:
 		for item in sorted_pairs:
+			if item[0][-2:]=='/w'.encode('GB2312'):
+				continue
 			fw.write(item[0] + '\t' + str(item[1]).encode('GB2312') + '\n')
 	return
 
@@ -105,6 +107,7 @@ def problem_2(data_path):
 		bigram_prob(u'扶贫 开发 工作 得到 很 大 成绩'.encode('GB2312'), fw)
 		bigram_prob(u'<BOS> 扶贫 开发 工作 得到 很 大 成绩'.encode('GB2312'), fw)
 		bigram_prob(u'<BOS> 扶贫 开发 工作 得到 很 大 成绩 <EOS>'.encode('GB2312'), fw)
+	return
 
 
 data_path = u"/Users/locke/Desktop/2017-2018秋季学期/计算语言学(0)/熟语料/"
