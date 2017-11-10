@@ -85,14 +85,14 @@ def problem_2(data_path):
 		sen_prob = 1.0
 		for i in range(len(words)+1-win_len):
 			cnt = 0
-			tar = ' '.join(words[i:i+win_len-1])
+			tar = ' '.join(words[i:i+win_len])
 			for sen in sentences:
 				if tar in sen:
 					cnt += 1
 			gram_probs.append(1.0*cnt/word_freq_dict[words[i]])
 			sen_prob *= 1.0*cnt/word_freq_dict[words[i]]
 		sen_prob *= 1.0*word_freq_dict[words[0]]/N
-		fw.write(str(math.log(round(sen_prob, 6))))
+		fw.write(str(round(math.log(sen_prob), 6)))
 		for p in gram_probs:
 			fw.write('\t'+str(round(math.log(p), 6)))
 		fw.write('\n')
