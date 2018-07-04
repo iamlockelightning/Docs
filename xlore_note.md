@@ -32,50 +32,36 @@ dump原数据
 xx: 三种语言的wiki：en_, fr_, zh_
 
 - 摘要：**xx_abstract.txt**
-
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t para_1::;para_2::;para_3
-
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t para_1::;para_2::;para_3
 
 - 正文：**xx_article.txt**
-
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t == 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2::;para_3
-
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t == 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2::;para_3
 
 - Category分类：**xx_category.txt**
-
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t [[Category:Anarchism| ]]::;[[Category:Anti-capitalism]]
-
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t [[Category:Anarchism| ]]::;[[Category:Anti-capitalism]]
 
 - 信息框：**xx_infobox.txt**
-
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t {attr_1 : val_1, attr_2 : val_2}
-
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t {attr_1 : val_1, attr_2 : val_2}
 
 - 信息框模版：**xx_infobox-template.txt**
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t template_name \t\t attr_1::;attr_2::;attr_3
 
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t template_name \t\t attr_1::;attr_2::;attr_3
+- 目录大纲：**xx_outline.txt**
+    - title \t\t id \t\t 
+    - title \t\t id \t\t redirect_title
+    - title \t\t id \t\t 1#Terrestrial albedo::;1.1#White-sky and black-sky albedo::;2#Astronomical albedo
 
-
-- 目录：**xx_outline.txt**
-
-> title \t\t id \t\t 
-> title \t\t id \t\t redirect_title
-> title \t\t id \t\t 1#Terrestrial albedo::;1.1#White-sky and black-sky albedo::;2#Astronomical albedo
-
-
-## 2. 初版的清洗// 统计关键条目（stats）
-
-
+## 2. 初版的清洗（clean）// 统计关键条目（stats）
 
 
 
