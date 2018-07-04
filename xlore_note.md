@@ -34,7 +34,8 @@ xx: 三种语言的wiki：en_, fr_, zh_
 - 摘要：**xx_abstract.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
-    - title \t\t id \t\t para_1::;para_2::;para_3
+    - title \t\t id \t\t AbstractHere::;para_1
+    - title \t\t id \t\t AbstractHere::;para_1::;para_2::;para_3
 
 - 正文：**xx_article.txt**
     - title \t\t id \t\t 
