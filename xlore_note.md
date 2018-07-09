@@ -29,38 +29,45 @@ dump原数据
 
 ## 1. 整理数据目录及格式（extraction）
 
-xx: 三种语言的wiki：en_, fr_, zh_
+xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
 
 - 摘要：**xx_abstract.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t AbstractHere::;para_1
     - title \t\t id \t\t AbstractHere::;para_1::;para_2::;para_3
+    - (title_h1 \t\t title_h2 \t\t url \t\t para_1::;para_2)
 
 - 正文：**xx_article.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t == 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2::;para_3
-
+    - (title_h1 \t\t title_h2 \t\t url \t\t == 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2)
+    
 - Category分类：**xx_category.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t [[Category:Anarchism| ]]::;[[Category:Anti-capitalism]]
+    - (title_h1 \t\t title_h2 \t\t url \t\t [[tag_1| ]]::;[[tag_2| ]])
 
 - 信息框：**xx_infobox.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t {attr_1 : val_1, attr_2 : val_2}
+    - (title_h1 \t\t title_h2 \t\t url \t\t {attr_1 : val_1, attr_2 : val_2})
 
 - 信息框模版：**xx_infobox-template.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t template_name \t\t attr_1::;attr_2::;attr_3
 
+
 - 目录大纲：**xx_outline.txt**
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t 1#Terrestrial albedo::;1.1#White-sky and black-sky albedo::;2#Astronomical albedo
+    - (title_h1 \t\t title_h2 \t\t url \t\t 1#Terrestrial albedo::;1.1#White-sky and black-sky albedo::;2#Astronomical albedo)
+
 
 ## 2. 初版的清洗（clean）// 统计关键条目（stats）
 
