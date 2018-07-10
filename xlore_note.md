@@ -24,13 +24,13 @@ xlore@KEG18:~/Wikipedia20180301$ tree
 
 ## 0. 原数据（dump）
 
-dump原数据
+* dump原数据
 
 
 ## 1. 整理数据目录及格式（extraction）
 
-xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
-id为wiki的id
+* xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+* id为wiki的id
 
 - 摘要：**xx_abstract.txt**
     - title \t\t id \t\t 
@@ -72,8 +72,8 @@ id为wiki的id
 
 ## 2. 初版的清洗（clean）// 统计关键条目（stats）
 
-xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
-id为wiki的id
+* xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+* id为wiki的id
 
 - 保留的entity列表：**xx_lite_entity.txt**
     - title \t\t id
@@ -82,8 +82,8 @@ id为wiki的id
 
 ## 3. 精简处理（fine）
 
-xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
-id为重新编号的id
+* xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+* id为重新编号的id
 
 - 同义词表：**xx_synonym.txt**
     - title \t\t id \t\t syn_1::;syn_2
@@ -114,5 +114,8 @@ id为重新编号的id
 
 
 ## 5. 代码（code）
-Extractor／ 项目
+
+* Extractor／ 项目
+
+
 
