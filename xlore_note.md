@@ -30,6 +30,7 @@ dump原数据
 ## 1. 整理数据目录及格式（extraction）
 
 xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+id为wiki的id
 
 - 摘要：**xx_abstract.txt**
     - title \t\t id \t\t 
@@ -71,10 +72,42 @@ xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
 
 ## 2. 初版的清洗（clean）// 统计关键条目（stats）
 
+xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+id为wiki的id
 
+- 保留的entity列表：**xx_lite_entity.txt**
+    - title \t\t id
+        - 从wiki xx_abstract.txt 和 xx_article.txt，过滤掉 filter_words = ["wikipedia:", "wikiprojects", "lists", "mediawiki", "template:", "user:", "portal:", "category:", "categories:", "file:", "help:", "image:", "module:", "articles", "extension:", "manual:"] 获得
 
 
 ## 3. 精简处理（fine）
+
+xx: 三种语言的wiki：en, fr, zh；(bd：百度数据)
+id为重新编号的id
+
+- 同义词表：**xx_synonym.txt**
+    - title \t\t id \t\t syn_1::;syn_2
+        - 从wiki redirect 获得
+    - (title_h1+title_h2 \t\t id \t\t syn_1::;syn_2)
+        - 从baidu redirect url 获得
+
+- 多义词表：**xx_polysemy.txt**
+    - title \t\t id \t\t [[pol_1|url]]::;[[pol_2|url]]
+        - 从wiki (disambiguation) 获得（仅保留名字存在匹配的）
+    - (title_h1+title_h2 \t\t id \t\t [[pol_1|url]]::;[[pol_2|url]])
+        - 从baidu force=1?的url + 获得
+
+- Mention表：**xx_mention.txt**
+    - title \t\t id \t\t men_1::;men_2
+        - 同义词表 + 页面内linkage指向 获得
+    - (title_h1+title_h2 \t\t id \t\t men_1::;men_2)
+        - 同义词表 + 页面内linkage指向 获得
+
+
+
+
+
+
 
 
 ## 4. 最终数据文件（ttl）
