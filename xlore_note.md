@@ -76,7 +76,7 @@ xlore@KEG18:~/Wikipedia20180301$ tree
 * id为wiki的id
 * new_id为新的xlore的编号：en1, en2, ...; fr1, fr2, ...; zh1, zh2, ...; bd1, bd2, ...;
 
-- 保留的entity列表：**xx_lite_entity.txt**
+- 保留的entity列表：**xx_lite_entity_newid.txt**
     - title \t\t id \t\t new_id
         - 从wiki xx_abstract.txt 和 xx_article.txt，过滤掉 filter_words = ["wikipedia:", "wikiprojects", "lists", "mediawiki", "template:", "user:", "portal:", "category:", "categories:", "file:", "help:", "image:", "module:", "articles", "extension:", "manual:"] 获得
 
