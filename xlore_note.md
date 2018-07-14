@@ -43,7 +43,7 @@ xlore@KEG18:~/Wikipedia20180301$ tree
     - title \t\t id \t\t 
     - title \t\t id \t\t redirect_title
     - title \t\t id \t\t ArticleHere::;== 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2::;para_3
-    - (title_h1 \t\t title_h2 \t\t url \t\t == 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2)
+    - (title_h1 \t\t title_h2 \t\t url \t\t ArticleHere::;== 一级标题 ==::;para_1::;=== 二级标题 ===::;para_2)
     
 - Category分类：**xx_category.txt**
     - title \t\t id \t\t 
