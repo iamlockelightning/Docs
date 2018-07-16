@@ -21,6 +21,17 @@ xlore@KEG18:~/Wikipedia20180301$ tree
     ├── ...
     └── backup
 ```
+整体进度
+
+一周安排
+成员 | 任务 | deadline
+------|------|------
+成江 |  | 
+方韦 |  | 
+吕鑫 |  | 
+书林 |  | 
+
+
 
 ## 0. 原数据（dump）
 
@@ -103,8 +114,6 @@ xlore@KEG18:~/Wikipedia20180301$ tree
         - 同义词表 + 页面内linkage指向 获得
     - (title_h1+title_h2 \t\t id \t\t men_1::;men_2)
         - 同义词表 + 页面内linkage指向 获得
-
-
 
 
 
